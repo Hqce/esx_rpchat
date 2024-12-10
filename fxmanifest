@@ -1,0 +1,28 @@
+shared_script '@staffpanel/ai_module_fg-obfuscated.lua'
+shared_script '@staffpanel/shared_fg-obfuscated.lua'
+shared_script "@fivemsecure/init.lua"
+fx_version 'adamant'
+game 'gta5'
+lua54 'yes'
+use_experimental_fxv2_oal 'true'
+description 'ESX RP Chat'
+version '1.0.0'
+client_scripts {
+	'@esx_boilerplate/natives.lua',
+	'@es_extended/locale.lua',
+	-- '@esx_boilerplate/utils/lazy_esx.lua',
+	'config.lua',
+	'client/main.lua'
+}
+server_scripts {
+	'@esx_boilerplate/natives_server.lua',
+	'@anticheat/event_s.lua',
+	-- '@esx_boilerplate/utils/lazy_esx.lua',
+	'@mysql-async/lib/MySQL.lua',
+	'config.lua',
+	'server/main.lua'
+}
+files {
+	"lib/send_reply.client.lua",
+	"lib/send_reply.shared.lua"
+}
